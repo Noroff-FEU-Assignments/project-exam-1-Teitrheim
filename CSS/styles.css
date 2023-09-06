@@ -1,7 +1,14 @@
 /* Reused CSS (Same on all pages) */
-
-body {
+* {
+    margin: 0;
+    padding: 0;
     font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
 }
 
 body a {
@@ -206,17 +213,25 @@ a:visited {
 
 }
 
-/* Container holding the image and the text */
 .indexContainer {
     position: relative;
     text-align: center;
     color: white;
 }
 
-/* Centered text */
+
 .centered {
     position: absolute;
     top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.titleI {
+    color: white;
+    position: absolute;
+    top: 650px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Jim Nightshade', cursive;
@@ -297,18 +312,20 @@ a:visited {
 }
 
 #carouselPrev:hover {
-    background-color: #00e4d1;
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
 #carouselNext:hover {
-    background-color: #00e4d1;
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
 .carousel-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 20px;
     background-color: transparent;
     border: none;
     color: #000;
@@ -333,6 +350,7 @@ a:visited {
 
 #gotoall {
     display: none;
+    background-color: black;
 }
 
 
@@ -361,6 +379,10 @@ a:visited {
             display: block;
             margin: auto;
             margin-bottom: 60px;
+            background-color: black;
+            position: absolute;
+            top: 500px;
+            right: 80px;
         }
 
         .carousel {
@@ -487,6 +509,7 @@ a:visited {
 
 .contact-text-box {
     background-color: #ffffff;
+    opacity: 0.8;
     text-align: left;
     padding-left: 50px;
     padding-right: 50px;
@@ -521,7 +544,8 @@ a:visited {
 }
 
 .submit:hover {
-    background-color: #00e4d1;
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
 .form__input {
@@ -537,18 +561,15 @@ a:visited {
     font-size: 50px;
 }
 
-.contactbackground {
-    width: 100%;
-    height: 390px;
-}
+
 
 #message {
     min-height: 100px;
     min-width: 200px;
 }
 
-.contactimage {
-    background-image: url(../images/contactimage.jpg);
+.contactImage {
+    background-image: url(/images/kickboxer-1561793_1280.jpg);
     margin-top: 20px;
     width: 100%;
     height: 100%;
@@ -588,34 +609,61 @@ a:visited {
 
 /* About page */
 
-#aboutContent {
-    padding-top: 50px;
-    max-width: 900px;
-    margin: auto;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 6px 0px #000000;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity: 90%;
+.aboutContent {
+    width: 900px;
+    height: 410px;
+    background: rgba(242, 242, 242, 1);
+    opacity: 0.5;
+    position: absolute;
+    top: 80px;
+    left: 15%;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#aboutContent p {
+.aboutHeading {
+    position: relative;
+    top: 10px;
+    width: 290px;
+    height: 52px;
+    left: 370px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+    z-index: 100;
+}
+
+.aboutText {
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.aboutContent p {
     font-size: 20px;
 }
 
 
-.aboutback {
+.aboutCover {
     background-image: url(../images/aboutimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 940px;
-    max-height: 800px;
-    box-shadow: 0px 0px 6px 0px #000000 inset;
+
 }
 
 @media (max-width: 440px) {
-    #aboutContent p {
+    .aboutContent p {
         font-size: 15px;
     }
 
@@ -623,6 +671,10 @@ a:visited {
 }
 
 /* All posts page */
+
+.allBackground {
+    background-color: #FFCBCB;
+}
 
 #allPostsContainer {
     display: grid;
@@ -652,7 +704,8 @@ a:visited {
 }
 
 .show-more-button:hover {
-    background-color: #00e4d1;
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
 .showmorecontainer {
