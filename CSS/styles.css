@@ -508,6 +508,9 @@ a:visited {
 /* Contact page */
 
 .contact-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     opacity: 0.8;
     text-align: left;
@@ -519,8 +522,6 @@ a:visited {
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
     margin: auto;
     max-width: 800px;
     margin-top: 60px;
@@ -553,11 +554,7 @@ a:visited {
     margin-bottom: 10px;
 }
 
-.paragraph-margin {
-    margin-right: 50px;
-}
-
-.contactheading {
+.contactHeading {
     font-size: 50px;
 }
 
@@ -590,10 +587,8 @@ a:visited {
         margin-top: 60px;
     }
 
-    .paragraph-margin {
-        margin-bottom: 50px;
-        text-align: center;
-        margin-right: 0px;
+    .contactP {
+        margin-right: 50px;
     }
 
     .input-container {
