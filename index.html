@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/CSS/styles.css" rel="stylesheet">
     <title>Fightin' Days | Home</title>
 </head>
 
 <body>
     <header class="menu-bar">
         <button class="menu-toggle">
-            <img src="/images/hamburger.png" alt="Menu" class="menubutton">
+            <img src="/images/burger.png" alt="Menu" class="menuButton">
         </button>
         <nav class="nav-menu">
             <ul>
@@ -27,7 +27,12 @@
                 <li><a href="allposts.html">All blog posts</a></li>
             </ul>
         </nav>
-
+        <nav class="mobile">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="allposts.html">All posts</a>
+        </nav>
     </header>
     <main>
         <div class="containerLogo">
@@ -42,21 +47,15 @@
 
             <div class="centered">Welcome to Fighting days - Your Ultimate Source for Everything Fighting!</div>
         </div>
-        <div class="carousel">
-            <div class="latestposts">
-                <button class="carousel-arrow carousel-arrow-prev" id="carouselPrev">
-                    <span class="buttontexthide">Previous</span>
-                </button>
-                <div class="carousel-container" id="post">
-                    <h2 class="carousel-title">10 Latest Posts</h2>
-                    <div class="loading-text">Loading content...</div>
-                    <div class="carousel-track" id="carouselTrack"></div>
-                </div>
-                <button class="carousel-arrow carousel-arrow-next" id="carouselNext">
-                    <span class="buttontexthide">Next</span>
-                </button>
+        <section>
+            <div class="container"></div>
+            <div class="featured-products">
+
             </div>
-        </div>
+            <div class="all-products">
+
+            </div>
+        </section>
         <div id="allContainer" class="allContainer"></div>
         <a href="allposts.html" class="show-more-button" id="gotoall">Go to all posts</a>
     </main>
@@ -72,9 +71,7 @@
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </div>
     </footer>
-    <script defer src="/js/index.js"></script>
-    <script defer src="/js/menu.js"></script>
-    <script defer src="/js/chat.js"></script>
+    <script src="js/index.js" type="module"></script>
 </body>
 
 </html>
