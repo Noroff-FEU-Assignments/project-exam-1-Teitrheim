@@ -15,7 +15,7 @@ async function getProducts() {
 }
 
 function createProductHtml(product) {
-  const container = document.querySelector(".all-products");
+  const container = document.querySelector(".allPostsContainer");
   const productContainer = document.createElement("div");
   productContainer.classList.add("product");
 
@@ -69,7 +69,7 @@ function createFeaturedProductHtml(product) {
 async function shopPage() {
   const products = await getProducts();
 
-  for (let i = 5; i < products.length; i++) {
+  for (let i = 0; i < products.length; i++) {
     const product = products[i];
 
     if (product.featured) {
