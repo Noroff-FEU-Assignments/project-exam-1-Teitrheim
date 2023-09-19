@@ -18,7 +18,6 @@ async function getProducts() {
 function createProductHtml(product) {
   const container = document.querySelector(".all-products");
   const productContainer = document.createElement("div");
-  productContainer.classList.add("product");
 
   const productLink = document.createElement("a");
   productLink.classList.add("product-item");
@@ -26,7 +25,6 @@ function createProductHtml(product) {
 
   const title = document.createElement("h3");
   title.textContent = product.title.rendered;
-
   productLink.appendChild(title);
 
   if (product.featured_media) {
