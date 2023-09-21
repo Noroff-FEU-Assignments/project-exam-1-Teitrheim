@@ -1,5 +1,4 @@
-const fullProductUrl =
-  "https://cors.noroff.dev/https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
+const fullProductUrl = "https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
 
 async function getProducts() {
   try {

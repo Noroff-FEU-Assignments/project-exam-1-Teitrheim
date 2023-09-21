@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const fullPostUrl =
-    "https://cors.noroff.dev/https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
+  const fullPostUrl = "https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
 
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       let specificImgAlt = "";
       if (post.featured_media) {
         const mediaResponse = await fetch(
-          `https://cors.noroff.dev/https://fightingdays.seeorno.no/wp-json/wp/v2/media/${post.featured_media}`
+          `https://fightingdays.seeorno.no/wp-json/wp/v2/media/${post.featured_media}`
         );
 
         if (mediaResponse.ok) {

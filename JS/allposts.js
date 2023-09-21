@@ -1,5 +1,4 @@
-const fullProductUrl =
-  "https://cors.noroff.dev/https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
+const fullProductUrl = "https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
 const showMoreBtn = document.getElementById("showMoreButton");
 
 let currentPage = 1;
@@ -60,7 +59,7 @@ async function createProductHtml(product) {
 
   if (product.featured_media) {
     const mediaResponse = await fetch(
-      `https://cors.noroff.dev/https://fightingdays.seeorno.no/wp-json/wp/v2/media/${product.featured_media}`
+      `https://fightingdays.seeorno.no/wp-json/wp/v2/media/${product.featured_media}`
     );
 
     if (mediaResponse.ok) {
