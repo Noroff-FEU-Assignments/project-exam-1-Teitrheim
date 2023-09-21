@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Bebas Neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", "Segoe UI", Tahoma, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -231,6 +231,7 @@ a:visited {
 }
 
 
+
 @media (max-width: 633px) {
     .indexbackground {
         padding-bottom: 0px;
@@ -244,15 +245,8 @@ a:visited {
         max-width: 665px;
     }
 
-    .carousel-container {
-        width: 665px;
-    }
-
     @media (max-width: 937px) {
 
-        .carousel {
-            display: none;
-        }
 
         #indexContent {
             max-width: 500px;

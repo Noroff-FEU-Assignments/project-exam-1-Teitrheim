@@ -1,6 +1,5 @@
-// Function to validate the form
 function validateForm(event) {
-  event.preventDefault(); // Prevent the form from submitting initially
+  event.preventDefault();
 
   const nameInput = document.getElementById("name");
   const emailInput = document.getElementById("email");
@@ -12,7 +11,6 @@ function validateForm(event) {
   const subjectError = document.getElementById("subjectError");
   const messageError = document.getElementById("messageError");
 
-  // Reset error messages
   nameError.textContent = "";
   emailError.textContent = "";
   subjectError.textContent = "";
@@ -20,35 +18,29 @@ function validateForm(event) {
 
   let isValid = true;
 
-  // Validate name (should be more than 5 characters long)
   if (nameInput.value.trim().length <= 5) {
     nameError.textContent = "Name should be more than 5 characters long";
     isValid = false;
   }
 
-  // Validate email (must be a valid email address)
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // from chatGPT
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(emailInput.value.trim())) {
     emailError.textContent = "Invalid email address";
     isValid = false;
   }
 
-  // Validate subject (should be more than 15 characters long)
-  if (subjectInput.value.trim().length <= 15) {
-    subjectError.textContent = "Subject should be more than 15 characters long";
+  if (subjectInput.value.trim().length <= 8) {
+    subjectError.textContent = "Subject should be more than 8 characters long";
     isValid = false;
   }
 
-  // Validate message content (should be more than 25 characters long)
   if (messageInput.value.trim().length <= 25) {
     messageError.textContent = "Message should be more than 25 characters long";
     isValid = false;
   }
 
-  // If the form is valid, you can submit it
   if (isValid) {
     document.getElementById("confirmationMessage").style.display = "block";
-    // Here, you can submit the form or take any other appropriate action.
   }
 }
 
