@@ -14,7 +14,7 @@ async function getProducts() {
   }
 }
 
-function createProductHtml(product) {
+async function createProductHtml(product) {
   const container = document.querySelector(".all-products");
   const productContainer = document.createElement("div");
 
@@ -27,40 +27,24 @@ function createProductHtml(product) {
   productLink.appendChild(title);
 
   if (product.featured_media) {
-    const image = document.createElement("img");
-    image.src = product.featured_media;
-    image.alt = product.title.rendered;
-    productLink.appendChild(image);
+    const mediaResponse = await fetch(
+      `https://fightingdays.seeorno.no/wp-json/wp/v2/media/${product.featured_media}`
+    );
+
+    if (mediaResponse.ok) {
+      const mediaData = await mediaResponse.json();
+      if (mediaData.source_url) {
+        const image = document.createElement("img");
+        image.src = mediaData.source_url;
+        image.alt = product.title.rendered;
+        productLink.appendChild(image);
+      }
+    } else {
+      console.error(`Failed to fetch media item for post ID ${product.id}`);
+    }
   }
 
   productContainer.appendChild(productLink);
-
-  container.appendChild(productContainer);
-}
-
-function createFeaturedProductHtml(product) {
-  const container = document.querySelector(".featured-products");
-  const productContainer = document.createElement("div");
-  productContainer.classList.add("product");
-
-  const productLink = document.createElement("a");
-  productLink.classList.add("product-item");
-  productLink.href = `specificPage.html?id=${product.id}`;
-
-  const title = document.createElement("h3");
-  title.textContent = product.title.rendered;
-
-  productLink.appendChild(title);
-
-  if (product.featured_media) {
-    const image = document.createElement("img");
-    image.src = product.featured_media;
-    image.alt = product.title.rendered;
-    productLink.appendChild(image);
-  }
-
-  productContainer.appendChild(productLink);
-
   container.appendChild(productContainer);
 }
 

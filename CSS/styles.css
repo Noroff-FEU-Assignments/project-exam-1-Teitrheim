@@ -1,4 +1,3 @@
-/* Reused CSS (Same on all pages) */
 * {
     margin: 0;
     padding: 0;
@@ -143,24 +142,6 @@ a:visited {
 }
 
 
-.readmorebutton {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: auto;
-    box-shadow: 0px 0px 2px 0px black;
-    border-radius: 5%;
-    margin-bottom: 50px;
-}
-
-.readmorebutton:hover {
-    box-shadow: 0px 0px 6px 0px #ffffff inset;
-}
-
-
 
 @media (max-width: 800px) {
     .nav-menu {
@@ -249,120 +230,6 @@ a:visited {
     transform: translate(-50%, -50%);
 }
 
-.postsContainer {
-    display: none;
-}
-
-.latestposts {
-    position: relative;
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel {
-    margin-bottom: 80px;
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-arrow {
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    box-shadow: 0px 0px 6px 0px black;
-}
-
-
-
-
-.carousel-arrow:hover {
-    box-shadow: 0px 0px 16px 0px #000000
-}
-
-.carousel-arrow:active {
-    box-shadow: 0px 0px 6px 0px #000000 inset;
-}
-
-.carousel-item {
-    width: 230px;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.carousel-item img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-item h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.carousel-item p {
-    font-size: 14px;
-    margin: 0;
-}
-
-#carouselPrev:hover {
-    background-color: #FF0000;
-    color: #ffffff;
-}
-
-#carouselNext:hover {
-    background-color: #FF0000;
-    color: #ffffff;
-}
-
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    outline: none;
-}
-
-.carousel-arrow-prev {
-    left: 20px;
-}
-
-.carousel-arrow-next {
-    right: 20px;
-}
-
-.post-image {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
-#gotoall {
-    display: none;
-    background-color: black;
-}
-
-
 
 @media (max-width: 633px) {
     .indexbackground {
@@ -382,17 +249,6 @@ a:visited {
     }
 
     @media (max-width: 937px) {
-
-
-        #gotoall {
-            display: block;
-            margin: auto;
-            margin-bottom: 60px;
-            background-color: black;
-            position: absolute;
-            top: 500px;
-            right: 80px;
-        }
 
         .carousel {
             display: none;
@@ -533,7 +389,6 @@ a:visited {
     margin: auto;
     max-width: 1000px;
     margin-top: 60px;
-    border-radius: 20px;
 }
 
 .submit {
@@ -583,7 +438,8 @@ a:visited {
 
 @media (max-width: 690px) {
     .contactimage {
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact-text-box {
@@ -666,7 +522,14 @@ a:visited {
 
 @media (max-width: 440px) {
     .aboutContent p {
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .aboutContent {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
 
