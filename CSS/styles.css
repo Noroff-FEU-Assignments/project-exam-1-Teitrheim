@@ -20,7 +20,7 @@ h1 {
     font-size: 50px;
 }
 
-.menu-bar {
+.top-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -77,7 +77,7 @@ h1 {
     opacity: 0.8;
 }
 
-.menu-toggle {
+.mobileMenu {
     display: none;
     background: none;
     border: none;
@@ -118,15 +118,15 @@ footer {
     color: #ffffff;
 }
 
-.footer-left {
+.footerLeft {
     float: left;
 }
 
-.footer-center {
+.footerCenter {
     text-align: center;
 }
 
-.footer-center a {
+.footerCenter a {
     margin: 0 150px;
     text-decoration: none;
     color: #ffffff;
@@ -136,7 +136,7 @@ a:visited {
     text-decoration: none;
 }
 
-.footer-right {
+.footerRight {
     float: right;
     color: #ffffff;
 }
@@ -161,7 +161,7 @@ a:visited {
         justify-content: flex-start;
     }
 
-    .menu-toggle {
+    .mobileMenu {
         display: block;
     }
 
@@ -190,11 +190,11 @@ a:visited {
         justify-content: flex-start;
     }
 
-    .menu-toggle {
+    .mobileMenu {
         display: block;
     }
 
-    .footer-center {
+    .footerCenter {
         display: none;
     }
 }
@@ -231,142 +231,9 @@ a:visited {
 }
 
 
-
-@media (max-width: 633px) {
-    .indexbackground {
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
-}
-
-@media (max-width: 1120px) {
-
-    #indexContent {
-        max-width: 665px;
-    }
-
-    @media (max-width: 937px) {
-
-
-        #indexContent {
-            max-width: 500px;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        .postsContainer {
-            display: grid;
-            grid-column: -1/1;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .post-item {
-            margin: auto;
-            width: 230px;
-            padding: 10px;
-            box-sizing: border-box;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .post-item img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-        }
-
-
-    }
-
-    @media (max-width: 493px) {
-        .postsContainer {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-}
-
-
-/* Posts page */
-
-
-#postContent {
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-#postContent img {
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 85%;
-}
-
-.modal-content {
-    width: 900px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 60px;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#postContent div img {
-    display: none;
-}
-
-.posttext {
-    max-width: 600px;
-    padding-right: 100px;
-    padding-left: 100px;
-    text-align: left;
-    margin: auto;
-}
-
-@media (max-width: 690px) {
-    .posttext {
-        padding: 0px;
-    }
-}
-
-
 /* Contact page */
 
-.contact-text-box {
+.contactBox {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
@@ -431,12 +298,12 @@ a:visited {
 }
 
 @media (max-width: 690px) {
-    .contactimage {
+    .contactImage {
         width: 100%;
         height: 100%;
     }
 
-    .contact-text-box {
+    .contactBox {
         display: block;
         padding-left: 10px;
         padding-right: 10px;
@@ -452,7 +319,7 @@ a:visited {
         display: block;
     }
 
-    .contactheading {
+    .contactHeading {
         text-align: center;
     }
 
@@ -566,7 +433,7 @@ a:visited {
     cursor: pointer;
 }
 
-.show-more-button {
+.showMoreBtn {
     background-color: #ffffff;
     padding: 10px;
     color: #000000;
@@ -579,16 +446,16 @@ a:visited {
     text-align: center;
 }
 
-.show-more-button:active {
+.showMoreBtn:active {
     box-shadow: 3px 3px 10px 0px #000000 inset;
 }
 
-.show-more-button:hover {
+.showMoreBtn:hover {
     background-color: #FF0000;
     color: #ffffff;
 }
 
-.showmorecontainer {
+.moreContainer {
     text-align: center;
 }
 

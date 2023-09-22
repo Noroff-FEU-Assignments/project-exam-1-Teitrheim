@@ -1,5 +1,5 @@
 const fullProductUrl = "https://fightingdays.seeorno.no/wp-json/wp/v2/posts";
-const showMoreBtn = document.getElementById("showMoreButton");
+const showMoreBtn = document.getElementById("showMoreBtn");
 
 let currentPage = 1;
 
@@ -21,7 +21,7 @@ async function getProducts() {
       }
 
       if (product.length < 9) {
-        showMoreButton.style.display = "none";
+        showMoreBtn.style.display = "none";
       }
     }
 
@@ -39,7 +39,7 @@ function loadMorePosts() {
   getProducts();
 }
 
-showMoreButton.addEventListener("click", loadMorePosts);
+showMoreBtn.addEventListener("click", loadMorePosts);
 
 getProducts();
 
