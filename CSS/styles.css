@@ -8,6 +8,7 @@
 html,
 body {
     max-width: 100%;
+    height: 100%;
 }
 
 body a {
@@ -78,13 +79,33 @@ h1 {
     height: 500px;
     font-size: 30px;
     padding: 50px;
-    margin: 80px 30px 0px 0px;
+    padding-left: 25px;
+    margin: 45px 30px 0px 0px;
     position: absolute;
-    background: #62FF3B;
-    top: 45px;
+    background: #ffffff;
+    top: 0;
     right: 10px;
+    left: 0;
     border-radius: 10px;
-    opacity: 0.8;
+}
+
+.mobile ul {
+    list-style-type: none;
+
+    padding: 0;
+
+}
+
+.mobile li {
+    margin-bottom: 15px;
+
+}
+
+.mobile a {
+    text-decoration: none;
+
+    color: #000000;
+
 }
 
 .mobileMenu {
@@ -109,8 +130,8 @@ h1 {
     position: relative;
     float: left;
     width: 10%;
-    left: 420px;
-    top: 6px;
+    left: 360px;
+    top: 10px;
 
 }
 
@@ -152,6 +173,92 @@ a:visited {
 }
 
 
+
+.carousel-container {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+
+}
+
+
+.carousel-slides {
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    position: relative;
+    flex: 0 0 calc(25% - 10px);
+
+    width: 100%;
+
+    margin-right: 10px;
+
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: #333;
+}
+
+.thumbnail-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
 
 @media (max-width: 800px) {
     .nav-menu {
@@ -284,7 +391,10 @@ a:visited {
 
 .form__input {
     display: block;
-    margin-bottom: 10px;
+}
+
+textarea {
+    padding-left: 5px;
 }
 
 .contactHeading {
@@ -305,6 +415,23 @@ a:visited {
     height: 100%;
     background-size: cover;
     box-shadow: 1px 1px 10px 0px #000000 inset;
+}
+
+.input-error {
+    color: #ff0000;
+    font-size: 14px;
+    margin: 0;
+}
+
+.input-container {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.confirmation-message {
+    display: none;
+    margin-top: 10px;
 }
 
 @media (max-width: 690px) {

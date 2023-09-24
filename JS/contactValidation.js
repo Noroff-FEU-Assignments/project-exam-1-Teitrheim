@@ -40,10 +40,13 @@ function validateForm(event) {
   }
 
   if (isValid) {
+    nameError.textContent = "";
+    messageError.textContent = "";
+    subjectError.textContent = "";
+    emailError.textContent = "";
     document.getElementById("confirmationMessage").style.display = "block";
   }
 }
 
-// Attach the validation function to the form's submit event
 const contactForm = document.getElementById("contact");
 contactForm.addEventListener("submit", validateForm);

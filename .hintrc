@@ -16,6 +16,12 @@
           "text-size-adjust"
         ]
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-input-field-name": "off"
+      }
     ]
   }
 }

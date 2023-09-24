@@ -28,10 +28,15 @@
             </ul>
         </nav>
         <nav class="mobile" id="mobileNav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="allposts.html">All posts</a>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="allposts.html">All posts</a></li>
+            </ul>
+
         </nav>
     </header>
     <main>
@@ -39,7 +44,6 @@
             <img class="logo" src="images/confrontation_4144620.png" alt="the fighting days logo" />
         </div>
         <h1 class="indexH1">Fightin' Days</h1>
-
 
         <div class="indexContainer">
             <img class="indexImage" src="images/austrian-national-library-h39HBKBclNM-unsplash.jpg"
@@ -49,9 +53,16 @@
         </div>
 
 
-        <div class="all-products"></div>
+        <div class="carousel-container">
+            <button id="prevBtn" class="carousel-button prev">&#10094;</button>
+            <button id="nextBtn" class="carousel-button next">&#10095;</button>
+            <div class="carousel-slides">
+                <!-- Images will be generated here using JavaScript -->
+            </div>
+        </div>
 
-        <div id="allContainer" class="allContainer"></div>
+
+
     </main>
     <footer>
         <div class="footerLeft">
