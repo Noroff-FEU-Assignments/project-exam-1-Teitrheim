@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       container.innerHTML += postHtml;
 
-      // Update the page title based on the blog's title
       document.getElementById(
         "blogTitle"
       ).textContent = `Fighting Days | ${post.title.rendered}`;

@@ -650,7 +650,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -85px auto 0;
+    margin: 0 auto;
     text-align: center;
     min-height: 800px;
 }
@@ -666,4 +666,10 @@ textarea {
 
 .container p {
     font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        min-height: 90vh;
+    }
 }
