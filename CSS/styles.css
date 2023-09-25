@@ -139,6 +139,10 @@ h1 {
     font-size: 20px;
 }
 
+.spacer {
+    height: 80px;
+}
+
 footer {
     height: 50px;
     background-color: #FF0000;
@@ -179,8 +183,6 @@ a:visited {
 .carousel-container {
     position: relative;
     margin: 20px auto;
-    width: 80%;
-
 }
 
 
