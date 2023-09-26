@@ -518,7 +518,6 @@ textarea {
 
 
 .aboutCover {
-    background-image: url(../images/aboutimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -572,10 +571,6 @@ textarea {
 }
 
 /* All posts page */
-
-.allBackground {
-    background-color: #FFCBCB;
-}
 
 #allPostsContainer {
     display: grid;
