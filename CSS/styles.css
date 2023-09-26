@@ -482,12 +482,13 @@ textarea {
 }
 
 .aboutContent h2 {
-    font-size: 36px;
+    font-size: 30px;
 
 }
 
 .aboutContent p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .aboutBackground {
@@ -539,12 +540,12 @@ textarea {
 
         margin: 0 auto;
 
-        padding: 40px;
+        padding: 50px;
 
     }
 
     .aboutContent h2 {
-        font-size: 48px;
+        font-size: 30px;
 
     }
 }
