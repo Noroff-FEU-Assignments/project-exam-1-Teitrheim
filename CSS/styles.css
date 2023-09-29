@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,7 +14,6 @@ body {
 }
 
 /*index page*/
-
 body a {
     text-decoration: none;
 }
@@ -30,7 +29,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #FF0000;
+    background-color: #ff0000;
     box-shadow: 0px 0px 6px 0px black;
     z-index: 100;
     text-transform: uppercase;
@@ -69,7 +68,6 @@ h1 {
     padding: 5px 10px;
 }
 
-
 .mobile {
     display: none;
 }
@@ -78,39 +76,33 @@ h1 {
     display: block;
 }
 
-
 .mobile {
     display: none;
-    height: 500px;
+    height: 365px;
     font-size: 30px;
     padding: 50px;
     padding-left: 25px;
     margin: 45px 30px 0px 0px;
     position: absolute;
-    background: #ffffff;
+    background: #dbdbdb;
     top: 0;
+    left: auto;
     right: 10px;
-    left: 0;
     border-radius: 10px;
 }
 
 .mobile ul {
     list-style-type: none;
-
     padding: 0;
-
 }
 
 .mobile li {
     margin-bottom: 15px;
-
 }
 
 .mobile a {
     text-decoration: none;
-
     color: #000000;
-
 }
 
 .mobileMenu {
@@ -118,15 +110,14 @@ h1 {
     background: none;
     border: none;
     width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    height: 45px;
+    margin-left: 290px;
     cursor: pointer;
     color: #ffffff;
     font-size: 20px;
     text-transform: uppercase;
     text-size-adjust: 500px;
 }
-
 
 .latestPosts {
     font-size: 20px;
@@ -137,7 +128,7 @@ h1 {
 }
 
 footer {
-    font-size: 26px;
+    font-size: 22px;
     height: 50px;
     background-color: #ff0000;
     display: flex;
@@ -178,17 +169,14 @@ a:visited {
     color: #ffffff;
 }
 
-
 .carousel-container {
     position: relative;
     margin: 20px auto;
 }
 
-
 .carousel-slides {
     display: flex;
     flex-wrap: wrap;
-
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
 }
@@ -196,13 +184,9 @@ a:visited {
 .carousel-slide {
     position: relative;
     flex: 0 0 calc(25% - 10px);
-
     width: 100%;
-
     margin-right: 10px;
-
     margin-bottom: 10px;
-
     box-sizing: border-box;
 }
 
@@ -267,7 +251,7 @@ a:visited {
     .nav-menu {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #000000;
@@ -294,7 +278,6 @@ a:visited {
     .logo {
         width: 50px;
         left: 10%;
-
     }
 }
 
@@ -327,12 +310,8 @@ a:visited {
     }
 }
 
-
-
-
 .indexImage {
     width: 80%;
-
 }
 
 .indexContainer {
@@ -340,7 +319,6 @@ a:visited {
     text-align: center;
     color: white;
 }
-
 
 .centered {
     font-size: 40px;
@@ -360,6 +338,10 @@ a:visited {
     .carousel-slides {
         display: block;
     }
+
+    .carousel-button {
+        display: none;
+    }
 }
 
 .titleI {
@@ -371,8 +353,6 @@ a:visited {
 }
 
 /*contact page*/
-
-
 .contactBox {
     align-items: center;
     justify-content: center;
@@ -381,15 +361,15 @@ a:visited {
     text-align: left;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px;
+    padding-top: 100px;
     color: #000000;
     box-shadow: 1px 1px 10px 0px #000000;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    max-width: 1000px;
-    margin-top: 60px;
+    max-width: 100%;
+    min-height: 600px;
 }
 
 .submit {
@@ -408,7 +388,7 @@ a:visited {
 }
 
 .submit:hover {
-    background-color: #FF0000;
+    background-color: #ff0000;
     color: #ffffff;
 }
 
@@ -423,8 +403,6 @@ textarea {
 .contactHeading {
     font-size: 50px;
 }
-
-
 
 #message {
     min-height: 100px;
@@ -468,7 +446,7 @@ textarea {
         padding-left: 10px;
         padding-right: 10px;
         margin: auto;
-        margin-top: 60px;
+        margin-top: -51px;
     }
 
     .contactP {
@@ -482,50 +460,37 @@ textarea {
     .contactHeading {
         text-align: center;
     }
-
 }
-
 
 /* about page */
 
-.noScroll {
-    overflow: hidden;
-}
 
 .aboutContent {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
     color: #ffffff;
+    position: relative;
+    z-index: 0;
 }
 
 .aboutContent h2 {
-    font-size: 30px;
+    font-size: 5vw;
     filter: brightness(1);
+    margin-top: 10px;
+    position: relative;
 }
 
 .aboutContent p {
-    font-size: 26px;
+    font-size: 3vw;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 80%;
+
     filter: brightness(1);
 }
 
-.aboutBackground {
-    background-color: #000000;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-.aboutCover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
 
 @media (min-width: 1200px) {
     .aboutContent h2 {
@@ -538,7 +503,6 @@ textarea {
     }
 }
 
-
 @media screen and (max-width: 768px) {
     body {
         font-size: 18px;
@@ -548,9 +512,14 @@ textarea {
         font-size: 24px;
     }
 
+    .aboutContent h2 {
+        font-size: 8vw;
+        margin-top: 5vh;
+
+    }
+
     .aboutContent p {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 5vw;
     }
 
     .aboutContent {
@@ -574,11 +543,7 @@ textarea {
     }
 }
 
-
-
 /*all blog posts page*/
-
-
 #allPostsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -628,7 +593,7 @@ textarea {
 }
 
 .showMoreBtn:hover {
-    background-color: #FF0000;
+    background-color: #ff0000;
     color: #ffffff;
 }
 
@@ -645,7 +610,6 @@ textarea {
 }
 
 /*specific page*/
-
 .container {
     max-width: 600px;
     display: flex;
@@ -685,7 +649,6 @@ textarea {
 
 .logo {
     max-width: 80px;
-
     height: auto;
     margin-bottom: -80px;
 }
