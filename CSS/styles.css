@@ -618,7 +618,7 @@ textarea {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    min-height: 800px;
+    min-height: 650px;
 }
 
 .container img {
@@ -638,17 +638,4 @@ textarea {
     .container {
         min-height: 90vh;
     }
-}
-
-.containerLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.logo {
-    max-width: 80px;
-    height: auto;
-    margin-bottom: -80px;
 }
