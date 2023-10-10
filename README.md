@@ -1,70 +1,67 @@
-# Your project title
+# Fighting Days
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](/images/5.fighting%20days%20landing%20page_1_11zon.png)
 
-A simple overview of the use/purpose of the project.
+Here I will explain the process of solving the assignment given as my first-year exam, the "Fighting Days" project. The task involved applying the skills acquired over the first year of studies, including planning, designing, creating a blog using HTML, CSS, and JavaScript, and testing it on users.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+To commence the project, I carefully reviewed the assignment requirements and organized tasks using a Trello board for efficient planning and task management.
 
-You can add some bullet points if you'd like to:
+Main Section of Report <a name="main-section-of-report"></a>
+After setting up the Trello board, I decided to create a blog focusing on various martial art styles. Given my interest in martial arts, this topic seemed engaging. I collected images from the web and obtained text descriptions for the images from ChatGPT, which were later imported into WordPress for easy retrieval.
 
-- List item 1
-- List item 2
-- List item 3
+The design phase involved using Figma to create a high-fidelity prototype. Drawing inspiration from reputable martial arts websites like MMA Junkie and Bloody Elbow, I initially experimented with various colors but eventually settled on a minimalist palette of red, pink, and white.
+
+Upon completing the design, I transitioned to coding in VSCode. I started with the HTML and CSS for the landing page, dedicating more time to JavaScript, which I found more challenging. Notably, the contact validation form required implementing regular expressions, which was a learning curve.
+
+The blog's dynamic content fetching from the WordPress API and the implementation of a carousel were particularly challenging aspects of the JavaScript coding. Despite the struggles, I managed to overcome these difficulties with persistent efforts.
+
+User testing and feedback played a crucial role in refining the design. Changes were made based on user suggestions, including adjusting background colors and font sizes. Hotjar tracking and testing on different users, including family members, provided valuable insights.
+
+The final steps involved checking the website on the WC3 validator and addressing contrast errors. The report encapsulates the entire process of planning, designing, and implementing the "Fighting Days" project.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+Javascript
+Figma
+HTML and CSS
+Wordpress
 
 ## Getting Started
 
-### Installing
+git clone [repository-url]
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
-
-```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
 npm install
-```
 
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
 npm run start
-```
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you're interested in contributing to the Community Science Museum project, please follow these guidelines:
+
+Fork the repository.
+Create a new branch for your feature or bug fix: git checkout -b feature/new-feature.
+Make your changes and commit them: git commit -m 'Add new feature'.
+Push your changes to the forked repository: git push origin feature/new-feature.
+Open a pull request, and describe the changes you've made.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Feel free to reach out to me for any questions or collaboration opportunities. You can find me on:
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+teitrheim@gmail.com
+LinkedIn
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+Pixabay
+Unsplash
+Dummy Text Generator
+MDN Web Docs
+WordPress REST API
+Wikipedia
+RexEgg
+CodePen
+Discord
+Stack Overflow
