@@ -7,8 +7,6 @@ Here I will explain the process of solving the assignment given as my first-year
 ## Description
 
 To commence the project, I carefully reviewed the assignment requirements and organized tasks using a Trello board for efficient planning and task management.
-
-Main Section of Report <a name="main-section-of-report"></a>
 After setting up the Trello board, I decided to create a blog focusing on various martial art styles. Given my interest in martial arts, this topic seemed engaging. I collected images from the web and obtained text descriptions for the images from ChatGPT, which were later imported into WordPress for easy retrieval.
 
 The design phase involved using Figma to create a high-fidelity prototype. Drawing inspiration from reputable martial arts websites like MMA Junkie and Bloody Elbow, I initially experimented with various colors but eventually settled on a minimalist palette of red, pink, and white.
