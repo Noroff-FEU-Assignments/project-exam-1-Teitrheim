@@ -1,6 +1,6 @@
 # Fighting Days
 
-![image](/images/5.fighting%20days%20landing%20page_1_11zon.png)
+![image](/images/ahaa.png)
 
 Here I will explain the process of solving the assignment given as my first-year exam, the "Fighting Days" project. The task involved applying the skills acquired over the first year of studies, including planning, designing, creating a blog using HTML, CSS, and JavaScript, and testing it on users.
 
