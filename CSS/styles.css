@@ -422,7 +422,7 @@ footer p {
     width: 50px;
     left: 10%;
 }
-}
+
 
 @media (max-width: 484px) {
     .nav-menu {
@@ -571,7 +571,7 @@ footer p {
 }
 
 .submit:hover {
-    background-color: #ff0000;
+    background-color: #ff00ff;
     color: #ffffff;
 }
 
@@ -781,12 +781,16 @@ textarea {
 }
 
 .showMoreBtn:hover {
-    background-color: #ff0000;
+    background-color: #ff00ff;
     color: #ffffff;
 }
 
 .moreContainer {
     text-align: center;
+}
+
+.all {
+    color: #ffffff;
 }
 
 @media (max-width: 1385px) {}
